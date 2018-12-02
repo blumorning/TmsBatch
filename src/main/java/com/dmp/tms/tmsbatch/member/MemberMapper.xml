@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dmp.tms.tmsbatch.member.MemberMapper">
+
+    <select id="selectMembers" parameterType="com.dmp.tms.tmsbatch.member.MemberVo"
+            resultType="com.dmp.tms.tmsbatch.member.MemberVo">
+        select
+               m_id
+               , m_name
+               , created_datetime
+        from member
+    </select>
+
+</mapper>
